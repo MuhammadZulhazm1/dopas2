@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
@@ -44,6 +45,7 @@
             </flux:navbar>
 
             <!-- Desktop User Menu -->
+             <!--
             <flux:dropdown position="top" align="end">
                 <flux:profile
                     class="cursor-pointer"
@@ -89,6 +91,7 @@
         </flux:header>
 
         <!-- Mobile Menu -->
+         <!--
         <flux:sidebar stashable sticky class="lg:hidden border-r border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
             <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
@@ -121,4 +124,17 @@
 
         @fluxScripts
     </body>
-</html>
+</html>-->
+
+```html
+            @props(['url'])
+            <table class="header" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                    <td class="align-center">
+                        <a href="{{ config('app.url') }}" style="display: inline-block;">
+                            <img src="{{ asset('images/pblogo.png') }}" alt="{{ config('app.name') }}">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        ```
