@@ -126,7 +126,7 @@
     </body>
 </html>-->
 
-```html
+html
             @props(['url'])
             <table class="header" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                 <tr>
@@ -137,4 +137,4 @@
                     </td>
                 </tr>
             </table>
-        ```
+        
